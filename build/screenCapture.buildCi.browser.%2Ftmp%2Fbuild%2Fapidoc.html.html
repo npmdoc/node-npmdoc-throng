@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/hunterloftis/throng"
-
-    >throng (v4.0.0)</a>
+    <a href="https://github.com/hunterloftis/throng">throng (v4.0.0)</a>
 </h1>
 <h4>A simple worker-manager for clustered apps</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.throng">module throng</a><ol>
 
@@ -90,8 +83,8 @@
   let startFn = options.start || startFunction || options;
   let masterFn = options.master || NOOP;
 
-  if (typeof startFn !== &#x27;function&#x27;) {
-    throw new Error(&#x27;Start function required&#x27;);
+  if (typeof startFn !== 'function') {
+    throw new Error('Start function required');
   }
   if (cluster.isWorker) {
     return startFn(cluster.worker.id);
@@ -108,21 +101,21 @@
   fork();
 
   function listen() {
-    cluster.on(&#x27;exit&#x27;, revive);
-    emitter.once(&#x27;shutdown&#x27;, shutdown);
+    cluster.on('exit', revive);
+    emitter.once('shutdown', shutdown);
     process
-      .on(&#x27;SIGINT&#x27;, proxySignal)
-      .on(&#x27;SIGTERM&#x27;, proxySignal);
+      .on('SIGINT', proxySignal)
+      .on('SIGTERM', proxySignal);
   }
 
   function fork() {
-    for (var i = 0; i &#x3c; opts.workers; i++) {
+    for (var i = 0; i &lt; opts.workers; i++) {
       cluster.fork();
     }
   }
 
   function proxySignal() {
-    emitter.emit(&#x27;shutdown&#x27;);
+    emitter.emit('shutdown');
   }
 
   function shutdown() {
@@ -134,7 +127,7 @@
   }
 
   function revive(worker, code, signal) {
-    if (running &#x26;&#x26; Date.now() &#x3c; runUntil) cluster.fork();
+    if (running &amp;&amp; Date.now() &lt; runUntil) cluster.fork();
   }
 
   function forceKill() {
@@ -156,3 +149,4 @@
     ]
 </div>
 </div>
+</body></html>
