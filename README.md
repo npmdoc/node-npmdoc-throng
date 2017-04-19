@@ -1,9 +1,14 @@
-# api documentation for  [throng (v4.0.0)](https://github.com/hunterloftis/throng)  [![npm package](https://img.shields.io/npm/v/npmdoc-throng.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-throng) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-throng.svg)](https://travis-ci.org/npmdoc/node-npmdoc-throng)
+# npmdoc-throng
+
+#### api documentation for  [throng (v4.0.0)](https://github.com/hunterloftis/throng)  [![npm package](https://img.shields.io/npm/v/npmdoc-throng.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-throng) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-throng.svg)](https://travis-ci.org/npmdoc/node-npmdoc-throng)
+
 #### A simple worker-manager for clustered apps
 
-[![NPM](https://nodei.co/npm/throng.png?downloads=true)](https://www.npmjs.com/package/throng)
+[![NPM](https://nodei.co/npm/throng.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/throng)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-throng/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-throng_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-throng/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-throng/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-throng/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-throng/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-throng/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-throng/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Hunter Loftis",
-        "email": "hunter@hunterloftis.com"
+        "name": "Hunter Loftis"
     },
     "bugs": {
         "url": "https://github.com/hunterloftis/throng/issues"
@@ -53,13 +57,11 @@
     "main": "lib/throng.js",
     "maintainers": [
         {
-            "name": "hunterloftis",
-            "email": "hunter@hunterloftis.com"
+            "name": "hunterloftis"
         }
     ],
     "name": "throng",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/hunterloftis/throng.git"
@@ -70,16 +72,6 @@
     "version": "4.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module throng](#apidoc.module.throng)
-
-
-
-# <a name="apidoc.module.throng"></a>[module throng](#apidoc.module.throng)
 
 
 
